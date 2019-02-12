@@ -27,20 +27,36 @@ const ACTIONBUTTONS = [
   { text: '=', buttonStyle: 'action' },
 ]
 
-function App() {
-  return (
-    <div className="calc-container">
-      <CalculatorDisplay />
-      <div className="btn-container">
-        <div className="number-btns">
+// function App() {
+//   return (
+//     <div className="calc-container">
+//       <CalculatorDisplay />
+//       <div className="btn-container">
+//           <NumberButton buttons={BUTTONS} />
+//           <ActionButton buttons={ACTIONBUTTONS} />
+//       </div>
+//     </div>
+//   );
+// };
+
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      display: '0',
+    };
+  }
+  render() {
+    return (
+      <div className="calc-container">
+        <CalculatorDisplay display={this.state.display} />
+        <div className="btn-container">
           <NumberButton buttons={BUTTONS} />
-        </div>
-        <div className="action-btns">
           <ActionButton buttons={ACTIONBUTTONS} />
         </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default App;

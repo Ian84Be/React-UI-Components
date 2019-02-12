@@ -1,14 +1,13 @@
 import React from 'react';
 import './Display.css';
 
-function CalculatorDisplay() {
+function CalculatorDisplay(props) {
     return (
         <div className="calc-display">
         <p>
-        0
+        {props.display}
         </p>
         </div>
     )
 }
-
 export default CalculatorDisplay;
