@@ -1,0 +1,59 @@
+.calc-container {
+    border:1px solid grey;
+    margin:0 auto;
+    width:200px;
+    display:flex;
+    flex-direction: column;
+}
+
+.calc-display {
+    width:200px;
+    height:50px;
+    background:black;
+    color:white;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size:2rem;
+}
+.calc-display p {
+    margin-right:1rem;
+}
+
+.btn-container {
+    /* border:1px solid cyan; */
+    display:flex;
+}
+
+button {
+    border:1px solid grey;
+    width:50px;
+    height:50px;
+    background:white;
+    font-size:2rem;
+    font-weight:bold;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.key0, .keyC {
+    width:150px;
+}
+
+.number-btns {
+    width:150px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.action-btns {
+    display:flex;
+    flex-direction: column;
+}
+
+.action-btns button {
+    background:maroon;
+    color:white;
+}

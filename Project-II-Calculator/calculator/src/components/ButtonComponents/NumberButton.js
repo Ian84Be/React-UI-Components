@@ -1,11 +1,12 @@
 import React from 'react';
-import './Button.css';
 
-class NumberButton extends React.Component {
-    render() {
-        return (
-            <button className={props.buttonStyle}>{props.text}</button>
-        );
-    }
+function NumberButton(props) {
+    let allButtons = [];
+    props.buttons.forEach(item => {
+        allButtons.push(
+            <button key={item.text} className={`key${item.text} ${item.buttonStyle}`}>{item.text}</button>
+            );
+    });
+    return allButtons;
 }
 export default NumberButton;

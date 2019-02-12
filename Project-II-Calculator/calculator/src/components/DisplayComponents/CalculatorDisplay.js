@@ -3,7 +3,11 @@ import './Display.css';
 
 function CalculatorDisplay() {
     return (
-        <div className="calc-display">0</div>
+        <div className="calc-display">
+        <p>
+        0
+        </p>
+        </div>
     )
 }
 
