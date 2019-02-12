@@ -46,6 +46,11 @@ class App extends React.Component {
       display: '0',
     };
   }
+
+  // numClick = event => {
+  //   console.log(event);
+  // }
+
   render() {
     return (
       <div className="calc-container">
