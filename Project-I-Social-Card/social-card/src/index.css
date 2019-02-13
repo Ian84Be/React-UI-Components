@@ -3,3 +3,10 @@ body {
   padding: 0.4rem;
   font-family: sans-serif;
 }
+
+.social-card {
+  border:1px solid blue;
+  max-width:500px;
+  display:flex;
+  flex-direction: column;
+}
